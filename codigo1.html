@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad de codigo 1</title>
+</head>
+
+<body>
+
+    <h1>Lit Num</h1>
+
+    <p id="Num1"></p>
+    <p id="Num2"></p>
+    <p id="Num3"></p>
+
+    <h1>Lit Cad</h1>
+
+    <p id="Cad1"></p>
+    <p id="Cad2"></p>
+
+    <h1>Lit Exp</h1>
+
+    <p id="Exp1"></p>
+    <p id="Exp2"></p>
+    <!-- estructura de una tabla ejemplo -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prueba</td>
+                <td>Apellido de la prueba</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script>
+    document.getElementById('Num1').innerHTML = "59043";
+    document.getElementById('Num2').innerHTML = "313.54";
+    document.getElementById('Num3').innerHTML = "545e2";
+    var cad1 = document.getElementById('Cad1');
+    cad1.innerHTML = "Next University";
+    document.getElementById('Cad1').innerHTML = "I Love JS";
+    var result = 4 + 3;
+    document.getElementById('Exp1').innerHTML = result;
+    document.getElementById('Exp2').innerHTML = "4/2*9";
+</script>
+
+</html>
