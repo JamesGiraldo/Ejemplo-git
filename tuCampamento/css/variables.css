@@ -1,0 +1,13 @@
+:root{
+    --color-header: rgba(193, 66, 66, 0.9);
+    --color-fondo-principal: rgba(252, 245, 155, 0.3);
+    --color-fondo-playa: rgb(252, 221, 253);
+    --color-fondo-parque:  rgb(209, 228, 241);
+    --color-fondo-rio: rgb(252, 221, 253);
+    --color-borde-formulario:  rgb(255, 166, 94);
+    --color-fondo-formulario:  rgb(255, 220, 181);
+    --fuente-titulos: Love Ya Like A Sister;
+    --fuente-otros:  DM Serif Text;
+  }
+
+  

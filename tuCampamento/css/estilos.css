@@ -1,0 +1,421 @@
+@import './variables.css';
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/*<---fuentes--->*/
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+}
+a,p, address, .tel, label, button {
+  font-family: var(--fuente-otros);
+}
+.descripcion h2 {
+  font-size: 50px;
+}
+.descripcion p {
+  font-size: 14px;
+}
+
+/*<---header y nav--->*/
+header{
+  padding-top: 1px;
+  background-color: var(--color-header);
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+  display:inline;
+}
+a[href^="#"] {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px;
+}
+a[href^="#"]:hover{
+  color:rgb(243, 159, 79);
+}
+/*<---principal contenido--->*/
+.principal {
+  background-image: url(../images/inicial2.JPG);
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 55vh;
+  display:flex;
+  justify-content: center;
+}
+.principal .contenido {
+  background-color: var(--color-fondo-principal);
+  width:75%;
+  height: 16vh;
+  padding: 15px;
+  margin-top:20px;
+  text-align: justify;
+  border-radius: 10px;
+}
+/*<---playa----->*/
+#playa .contenido{
+  background-color: var(--color-fondo-playa);
+  width: 100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#playa .contenido .imagen-principal{
+  display: none;
+  margin:10px;
+}
+#playa .contenido .descripcion{
+  width:100%;
+  height:auto;
+  margin-top:20px;
+  text-align: center;
+}
+#playa .contenido .imagen-secundaria{
+  width:60%;
+  height: 55%;
+  margin:10px;
+}
+#playa .contenido .imagen-secundaria img{
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+#playa .contenido .imagen-secundaria :hover{
+  width:105%;
+  height:105%;
+  filter: brightness(100%);
+}
+/*<---parque----->*/
+#parque .contenido{
+  background-color: var(--color-fondo-parque);
+  width: 100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#parque .contenido .imagen-principal{
+  display: none;
+  margin:10px;
+}
+#parque .contenido .descripcion{
+  width:100%;
+  height:auto;
+  margin-top:20px;
+  text-align: center;
+}
+#parque .contenido .imagen-secundaria{
+  width:60%;
+  height: 55%;
+  margin:10px;
+}
+#parque .contenido .imagen-secundaria img{
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+#parque .contenido .imagen-secundaria :hover{
+  width:105%;
+  height:105%;
+  filter: brightness(100%);
+}
+/*<---rio----->*/
+#rio .contenido{
+  background-color: var(--color-fondo-rio);
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rio .contenido .imagen-principal{
+  display: none;
+  margin:10px;
+}
+#rio .contenido .descripcion{
+  width:100%;
+  height:auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#rio .contenido .imagen-secundaria{
+  width:60%;
+  height: 55%;
+  margin:10px;
+}
+#rio .contenido .imagen-secundaria img{
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+#rio .contenido .imagen-secundaria :hover{
+  width:105%;
+  height:105%;
+  filter: brightness(100%);
+}
+/*<---footer--->*/
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*<---contacto----->*/
+.informacion {
+  margin: 10px 10px;
+}
+.informacion .tel{
+  margin: 10px 0;
+}
+/*<---formulario----->*/
+.contacto{
+  text-align: center;
+  margin: 20px;
+  border: 1px solid var(--color-borde-formulario);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--color-fondo-formulario);
+}
+.contacto input{
+  margin-bottom: 10px;
+  border: 1px solid var(--color-borde-formulario);
+  width: 90%;
+}
+.contacto textarea{
+  margin-bottom: 10px;
+  border: 1px solid var(--color-borde-formulario);
+  width: 90%;
+}
+.contacto button{
+  background-color:var(--color-borde-formulario);
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 20%;
+}
+@media screen and (min-width:417px){
+  header {
+    flex-direction:row;
+    justify-content: center;
+    font-size: small;
+  }
+  ul{
+   margin: 6px 0 0 10px;
+  }
+  /*<---principal contenido--->*/
+  .principal {
+    background-size: 230% 100%;
+    height: 64vh;
+  }
+  .principal .contenido {
+    font-size: 20px;
+  }
+  /*<---playa----->*/
+  #playa .contenido {
+    flex-direction: row;
+  }
+  #playa .contenido .descripcion{
+    margin-bottom: 120px;
+    width: 55%;
+  }
+  #playa .contenido .descripcion p{
+    font-size: 12px;
+  }
+  #playa .contenido .imagen-secundaria{
+    width:30%;
+    height:80%;
+    margin-left: 30px;
+  }
+  /*<---parque----->*/
+  #parque .contenido {
+    flex-direction: row;
+  }
+  #parque .contenido .descripcion{
+    margin-bottom: 120px;
+    width: 55%;
+  }
+  #parque .contenido .descripcion p{
+    font-size: 12px;
+  }
+  #parque .contenido .imagen-secundaria{
+    width:30%;
+    height:80%;
+    margin-left: 30px;
+  }
+   /*<---rio----->*/
+  #rio .contenido {
+    flex-direction: row;
+  }
+  #rio .contenido .descripcion{
+    margin-bottom: 120px;
+    width: 55%;
+  }
+  #rio .contenido .descripcion p{
+    font-size: 12px;
+  }
+  #rio .contenido .imagen-secundaria{
+    width:30%;
+    height:80%;
+    margin-left: 30px;
+  }
+footer{
+  flex-direction:row;
+  
+}
+.informacion{
+ width:50%;
+ margin-bottom: 160px;
+}
+.contacto{
+  width:50%;
+}
+.contacto #email{
+  padding-right:4px;
+}
+}
+@media screen and (min-width:1025px){
+  header {
+    justify-content: flex-start;
+  }
+  h1{
+   margin-left: 10px;
+  }
+  /*<---principal contenido--->*/
+  .principal {
+    background-size: 120% 100%;
+    height: 59vh;
+    display:flex;
+    justify-content: center;
+  }
+  .principal .contenido {
+    width:37%;
+  }
+  .principal .contenido p{
+    font-size: 19px;
+  }
+  .principal .contenido h2{
+    font-size: 26px;
+  }
+  /*<---playa----->*/
+  #playa .contenido {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #playa .contenido .imagen-principal{
+    width:20%;
+    height:auto;
+    display: block;
+    margin-right: 30px;
+  }
+  #playa .contenido .imagen-principal img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    filter: brightness(80%);
+  }
+  #playa .contenido .descripcion{
+    width:50%;
+    height: auto;
+  }
+  #playa .contenido .imagen-secundaria{
+    width:20%;
+    height:auto;
+  }
+  #playa .contenido .imagen-principal :hover{
+    width:105%;
+    height:105%;
+    filter: brightness(100%);
+  }
+   /*<---parque----->*/
+   #parque .contenido {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #parque .contenido .imagen-principal{
+    width:20%;
+    height:auto;
+    display:block;
+    margin-right: 30px;
+  }
+  #parque .contenido .imagen-principal img{
+    width:100%;
+    height:auto;
+    border-radius: 10px;  
+    filter: brightness(80%);  
+  }
+  #parque .contenido .descripcion{
+    width:50%;
+  }
+  #parque .contenido .imagen-secundaria{
+    width:20%;
+    height:auto;
+  }
+  #parque .contenido .imagen-principal :hover{
+    width:105%;
+    height:105%;
+    filter: brightness(100%);
+  }
+   /*<---rio----->*/
+   #rio .contenido {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #rio .contenido .imagen-principal{
+    width:20%;
+    height:auto;
+    display:block;
+    margin-right: 30px;
+  }
+  #rio .contenido .imagen-principal img{
+    width:100%;
+    height:100%;
+    border-radius: 10px; 
+    filter: brightness(80%);
+  }
+  #rio .contenido .descripcion{
+    width:50%;
+  }
+  #rio .contenido .imagen-secundaria{
+    width:20%;
+    height:auto;
+  }
+  #rio .contenido .imagen-principal :hover{
+    width:105%;
+    height:105%;
+    filter: brightness(100%);
+  }
+  footer{
+    flex-direction: row;
+  }
+  .informacion{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  .contacto{
+    text-align: left;
+  }
+  .contacto input{
+    width: 98%;
+    margin-right: 20px;
+  }
+  .contacto textarea{
+    width: 98%;
+  }
+  .contacto button{
+    width: 10%;
+  }
+}
